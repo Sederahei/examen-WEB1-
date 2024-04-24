@@ -64,3 +64,28 @@ nav {
   border-color: #d15401dd;
   border-radius: 10px;
 }
+
+.acceuil {
+  display: flex;
+  flex-direction: column;
+}
+.titre {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  font-size: 2.5rem;
+  margin-top: 10%;
+  margin-left: 2%;
+  color: #305f5e;
+  font-family: "Kaushan Script", cursive;
+}
+
+.sousTritre {
+  color: white;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Kaushan Script", cursive;
+  font-size: 2.1rem;
+}
