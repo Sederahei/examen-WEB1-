@@ -56,6 +56,7 @@ nav {
 .menu a {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: black;
 }
 .menu a:hover {
   transform: scaleX(1px);
@@ -63,6 +64,7 @@ nav {
   transition: 0.1s;
   border-color: #d15401dd;
   border-radius: 10px;
+font-weight: bold;
 }
 
 .acceuil {
@@ -88,4 +90,36 @@ nav {
   align-items: center;
   font-family: "Kaushan Script", cursive;
   font-size: 2.1rem;
+}
+
+.visiter {
+  border: none;
+  width: 15%;
+  height: 10%;
+  display: block;
+  outline: none;
+  background-color: #d15301;
+  font-size: 30px;
+  font-weight: lighter;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%;
+  cursor: pointer;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 6px rgba(198, 110, 2, 0.909);
+}
+.visiter:hover {
+  transform: scaleX(-8px);
+  background-color: #458687;
+  color: aliceblue;
+  transition: 0.3s;
+  top: 2px;
+}
+.visiter a {
+  color: black;
+}
+.visiter a:hover {
+  color: white;
+  transition: 0.2s;
 }
