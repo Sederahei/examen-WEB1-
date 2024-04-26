@@ -123,3 +123,50 @@ font-weight: bold;
   color: white;
   transition: 0.2s;
 }
+
+
+.body1 {
+  background-image: url(vintsy.avif);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.fixed {
+  background-attachment: fixed;
+  background-size: 100%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 12px;
+}
+.apropos {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.historique {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-size: 16%;
+  border-radius: 20px;
+}
+.historique:hover {
+  background-color:#9aa17f;
+  transition: 0.2s;
+  transform: scale(1);
+  background-size: 20%;
+}
+.historique p:hover {
+  transition: 0s;
+  border-radius: 30px;
+  background-size: cover;
+  color: white;
+  font-style: italic;
+  font-size: 2rem;
+  font-family: "Kaushan Script", cursive;
+}
