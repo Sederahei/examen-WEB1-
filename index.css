@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif, 'poppins';
 }
 
 .container {
@@ -33,6 +35,7 @@ nav {
 .logo:hover {
   transform: rotateX(360deg);
 }
+
 .menu {
   display: flex;
   flex-direction: row;
@@ -44,27 +47,27 @@ nav {
 .bars {
   display: none;
 }
-.bars img {
+.bars img{
   width: 3rem;
   border-radius: 50px;
+  
 }
-.bars img:hover {
-  color: #883d12;
+.bars img:hover{
+  color:#883d12 ;
   cursor: pointer;
   transition: 0.1s;
 }
 .menu a {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: black;
 }
+
 .menu a:hover {
   transform: scaleX(1px);
   color: white;
   transition: 0.1s;
   border-color: #d15401dd;
   border-radius: 10px;
-  font-weight: bold;
 }
 
 .acceuil {
@@ -107,7 +110,7 @@ nav {
   cursor: pointer;
   border-radius: 20px;
   position: relative;
-  box-shadow: 0 6px rgba(198, 110, 2, 0.909);
+  box-shadow: 0 6px #458687;
 }
 .visiter:hover {
   transform: scaleX(-8px);
@@ -124,6 +127,11 @@ nav {
   transition: 0.2s;
 }
 
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
 .body1 {
   background-image: url(vintsy.avif);
   background-attachment: fixed;
@@ -155,7 +163,7 @@ nav {
   border-radius: 20px;
 }
 .historique:hover {
-  background-color: #9aa17f;
+  background-color:#9aa17f;
   transition: 0.2s;
   transform: scale(1);
   background-size: 20%;
@@ -169,7 +177,6 @@ nav {
   font-size: 2rem;
   font-family: "Kaushan Script", cursive;
 }
-
 .histo {
   cursor: pointer;
   margin: top 0;
@@ -181,7 +188,7 @@ nav {
   margin-top: 200px;
 }
 .mission p:hover {
-  background-color: #9aa17f;
+  background-color:#9aa17f;
   transition: 0s;
   border-radius: 30px;
   background-size: cover;
@@ -216,6 +223,8 @@ nav {
   margin-left: 10px;
 }
 
+/* section de photo */
+
 #galeri {
   display: flex;
   align-items: center;
@@ -234,14 +243,16 @@ nav {
 .point img {
   width: 1rem;
 }
-.aPhotoo {
+.aPhotoo{
   display: none;
 }
-#aphotoo {
+#aphotoo{
   display: block;
 }
 
+
 .nosA {
+  color: black;
   text-transform: uppercase;
   position: relative;
   font-style: 25px;
@@ -274,7 +285,7 @@ nav {
   text-decoration: none;
 }
 .nosA:hover {
-  color: #a1a589;
+  color:#a1a589;
   transition: 0.7s;
   transform: rotateZ(360deg);
   cursor: pointer;
@@ -285,6 +296,7 @@ nav {
   margin: 100px auto;
   padding: 0 8%;
   justify-content: space-around;
+
 }
 
 .image ul {
@@ -295,7 +307,6 @@ nav {
   text-decoration: none;
   list-style: none;
 }
-
 .image li .aPhoto {
   display: flex;
   flex-direction: row;
@@ -326,9 +337,378 @@ nav {
 }
 
 .image li:hover {
-  transform: scale(1.5);
-
-  transition: 2s;
+  transform: scale(1.05);
+  transition: 1s;
   cursor: pointer;
   text-decoration: none;
+}
+
+
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 90dvw;
+}
+
+#home .left{
+    width: 50dvw;
+    margin: 0;
+    margin-left: 30px;
+    border: solid;
+    box-shadow: 0 0 20px #226bca;
+    border-radius: 2%;
+
+}
+#home .left:hover{
+  transition: 1s;
+  background-color: #00000030;
+}
+
+#home .left h1{
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: rgb(136,70,19);
+
+}
+
+#home .left h1  span{
+    color: brown;
+    width: 20px;
+}
+
+#home .left p {
+margin-bottom: 30px;
+color: #000000;
+font-size: 13px;
+
+}
+#home .left a {
+    background-color: #b52a2a;
+    padding: 0px 10px;
+    font-size: 5px;
+    color: #d40e0e;
+    transition: 0.5s;
+}
+
+#home .right a {
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home .right img{
+    width: 40vh;
+    border-radius: 20%;
+    z-index: 1000;
+}
+
+.right img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+
+ /*section localisation */
+.localisation {
+  margin: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+}
+.localisation iframe:hover {
+  transform: scale(1);
+  transition: 2s;
+}
+
+
+
+.lieux:hover {
+  transform: scale(1);
+  transition: 1s;
+}
+
+
+.loca {
+    background-color: #869c3c95;
+    border-radius: 9%;
+    background-size: 90px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 26%;
+    margin-right: 26%;
+}
+
+.loca div{
+    display: flex;
+    flex-direction: column;
+}
+.loca:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.locaa h1{
+    color: rgb(20, 136, 238);
+    text-align: center;
+    font-style: italic;
+}
+.locaa p{
+    margin: 2%;
+}
+.gps{
+    text-align: center;
+}
+.bureaux{
+    text-align: center;
+    
+}
+.bureaux h1{
+    color:  rgb(20, 136, 238) ;
+}
+
+
+/* sectioon de tarifs */
+#tarifs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+}
+.nosAA img {
+  margin-top: 50px;
+  border-radius: 30px;
+  width: 50dvw;
+  cursor: pointer;
+}
+.nosAA img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.nosAAA {
+  text-transform: uppercase;
+  position: relative;
+  font-style: 25px;
+  text-decoration: none;
+  margin-top: 5%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.nosAAA:before {
+  text-decoration: none;
+  position: absolute;
+  left: 60px;
+  bottom: -10px;
+  content: "";
+  background-color: #a1a589;
+  width: 80%;
+  height: 5px;
+  border-radius: 6px;
+}
+.nosAAA:after {
+  position: absolute;
+  top: -10px;
+  left: -40px;
+  content: "";
+  background-color: #a1a589;
+  width: 80%;
+  height: 4px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.nosAAA:hover {
+  color: #a1a589;
+  transition: 0.7s;
+  transform: rotateZ(360deg);
+  cursor: pointer;
+}
+
+.contenaire {
+  background-image: url(image9.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  border-radius: 09%;
+  margin-bottom: 20%;
+  width: 100%;
+}
+.money img {
+  width: 5rem;
+  margin-top: 05%;
+  border-color: #070808;
+  box-sizing: border-box;
+  overflow: clip;
+  background-position: center;
+  vertical-align: middle;
+}
+.money img:hover {
+  transition: 0.6s;
+  transform: scale(1.1);
+}
+.money {
+  justify-content: center;
+  text-align: center;
+}
+.sous {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.titre h2{
+  color: white;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  position: relative;
+  margin-left: 30vh;
+}
+.dess h1 {
+  display: flex;
+  flex-direction: column;
+  color: #81defc;
+  justify-content: center;
+  text-align: center;
+  background-color: #6886328c;
+  border-radius: 10%;
+  background-size: 20%;
+  margin-left: 43%;
+  margin-right: 43%;
+  font-size: 1rem;
+}
+.dess h1:hover {
+  transform: scale(1.1);
+  transition: 0.1s;
+  opacity: 120%;
+  color: white;
+  cursor: pointer;
+}
+.dess li {
+  flex-direction: row;
+  color: #070808;
+  text-align: center;
+  list-style: none;
+  font-size: 1rem;
+  font-size: 20px;
+}
+
+.rif h1 li {
+  display: flex;
+  flex-direction: row;
+}
+
+section {
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+
+
+header input {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+.logo img{  
+
+   width: 13vw;
+   
+}
+nav{
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(146, 128, 128, 0.616);
+    backdrop-filter: blur();
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+  .menu a {
+    display: none;
+    
+  }
+
+  label i {
+    display: block;
+  }
+  nav .div{
+    font-size: 0.9rem;
+    width: 19px;
+    position: absolute;
+  }
+  .titre{
+    font-size: 0.9rem;
+     width: 25vw;
+  }
+
+  .bars {
+    position: relative;
+    display: block;
+    margin-left: 500px;
+  }
+    .bars img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    z-index: 100000;
+    margin-right: 30px;
+    padding: 10px;
+  }
+  .visiter {
+    font-size: 1rem;
+  }
+
+  .fixed {
+    display: flex;
+    flex-direction: column;
+  }
+  .image ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100dvw;
+  }
+  .point img{
+    display: none;
+  }
+  #home{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+
+  .localisation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    backdrop-filter: blur(px);
+  }
+
 }
