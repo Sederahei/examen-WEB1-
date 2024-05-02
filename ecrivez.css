@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:  url(logo-majunga.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.contenaire{
+    position: relative;
+    word-wrap:1%;
+    max-width: 450px;
+    height: 530px;
+    background: transparent;
+    border-radius: 20px;
+    border: 2px solid rgba(227, 257, 257, .7);
+    backdrop-filter: blur(60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.contenaire:hover{
+    background-color: #53535319;
+}
+.mainbox{
+    padding: 50px;
+    width: 900px;
+}
+.mainbox h1{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 700;
+    color: rgb(30, 30, 26) ;
+}
+.inputbox{
+    position: relative;
+    height: 52px;
+    width: 100px;
+    border-bottom: 2px solid #ffffff;
+    margin: 32px 0;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-weight: 500;
+    font-size: 18px;
+    transform: all ease .40s;
+
+}
+.inputbox label{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 0 30px 0 6px;
+
+}
+.inputbox label{
+    position: absolute;
+    right: 9px;
+    font-size: 20px;
+    color: #873d3d;
+    line-height: 55px;
+}
+
+.inputbox input:fucus~label,
+.inputbox input:valid~label{
+    top: -3;
+}
+.check{
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    margin: -10px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.check label input{
+    vertical-align: middle;
+    margin-right: 6px;
+    accent-color: #fff;
+}
+.check a{
+    color: black;
+    
+}
+.check a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #78c6b9;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #dd771f;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btn:hover{
+    background-color: rgba(248, 245, 240, 0.783) ;
+}
+.registre{
+    text-align: center;
+    color:white;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 35px 0 10px;
+
+}
+.registre p a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #80bfb3;
+    margin-left: 5px;
+}
+.registre  a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
