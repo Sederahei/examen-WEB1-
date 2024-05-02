@@ -47,6 +47,14 @@ body{
     font-weight: 700;
     color: rgb(30, 30, 26) ;
 }
+.retour{
+    color: white;
+    background-color: red;
+    font-size: 25px;
+    position: relative;
+    margin-bottom: 0;
+    transform: rotate(180deg);
+}
 .inputbox{
     position: relative;
     height: 52px;
